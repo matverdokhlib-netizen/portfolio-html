@@ -10,21 +10,40 @@
 </head>
 
 <body>
-
+<div class="page">
 <header>
     <h1>Максим Твердохліб</h1>
 
     <nav class="nav-menu">
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-list">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про мене</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+
+</nav>
 </header>
 
+    </ul>
+</aside>
 <main>
+<aside class="sidebar">
+    <h3>Навички</h3>
 
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
 <section class="content-section">
     <h2>Вітаю у моєму портфоліо</h2>
 
@@ -51,6 +70,30 @@
         <li>Освоїти JavaScript</li>
         <li>Стати професійним Front-End Developer</li>
     </ol>
+</section>
+<section class="content-section">
+
+    <h2>Мої проєкти</h2>
+
+    <div class="projects-grid">
+
+        <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>Мій перший адаптивний сайт-портфоліо.</p>
+        </article>
+
+        <article class="card">
+            <h3>HTML Forms</h3>
+            <p>Практика створення форм та таблиць.</p>
+        </article>
+
+        <article class="card">
+            <h3>Responsive Layout</h3>
+            <p>Адаптивна верстка для різних пристроїв.</p>
+        </article>
+
+    </div>
+
 </section>
 
 <section class="content-section">
@@ -83,6 +126,6 @@
 <footer>
     <p>&copy; 2025-2026 Максим Твердохліб. Всі права захищені.</p>
 </footer>
-
+</div>
 </body>
 </html>
