@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1>Task Manager</h1>
+
+    <div class="task-controls">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Нове завдання..."
+        >
+
+        <button id="addBtn">
+            Додати
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Пошук..."
+        >
+
+    </div>
+
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">
+            Всі
+        </button>
+
+        <button class="filter-btn" data-filter="active">
+            Активні
+        </button>
+
+        <button class="filter-btn" data-filter="completed">
+            Виконані
+        </button>
+
+    </div>
+
+    <p id="taskCounter">
+        Активних задач: 0
+    </p>
+
+    <div id="loader" class="loader hidden">
+        Завантаження...
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
